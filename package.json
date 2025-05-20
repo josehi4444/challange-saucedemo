@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cypress:open": "cypress open --config-file cypress.config.js --env configFile=dev-environment",
-    "cypress:run:all": "cypress run --browser chrome --headless --spec 'cypress/src/e2e/ui/*.cy.js' --config-file cypress.config.js --env configFile=dev-environment",
+    "cypress:run:all": "cypress run --browser chrome --headless --spec 'cypress/e2e/ui/*.cy.js' --config-file cypress.config.js --env configFile=dev-environment",
     "allure:clean": "rm -rf ./allure-results ./allure-report",
     "allure:generate": "allure generate --clean",
     "allure:open": "allure serve",
@@ -15,6 +15,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "allure-commandline": "^2.34.0",
     "allure-cypress": "^3.2.2",
     "cypress": "^14.3.3"
   }

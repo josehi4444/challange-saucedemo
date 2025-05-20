@@ -1,7 +1,8 @@
 // checkoutPage.js
 export default class CheckoutPage {
+    
     get firstNameInput() {
-        return cy.get('[data-test=firstName]');
+        return cy.get('[data-test="firstName"]')
     }
 
     get lastNameInput() {
@@ -19,31 +20,31 @@ export default class CheckoutPage {
     get continueButton() {
         return cy.get('[data-test=continue]');
     }
+
      get checkoutButton() {
         return cy.get('#checkout');
     }
+
     get checkoutSummaryContainer() {
         return cy.get('#checkout_summary_container');
     }
+    
     get finishButton() {
         return cy.get('#finish');
     }
     get backHomeButtons() {
         return cy.get('#back-to-products');
     }
-    
-    enterFirstName(name) {
-        cy.get(this.firstNameInput).type(name);
-    }
+    get thankYouMessage() {
+        return cy.contains('Thank you for your order!');
+    }	
 
-    enterLastName(name) {
-        cy.get(this.lastNameInput).type(name);
+    fillCheckoutForm(firstName, lastName, postalCode) {
+        this.firstNameInput.type(firstName);
+        this.lastNameInput.type(lastName);
+        this.postalCodeInput.type(postalCode);
     }
-
-    enterPostalCode(code) {
-        cy.get(this.postalCodeInput).type(code);
-    }
-
+ 
     clickCancel() {
         cy.get(this.cancelButton).click();
     }
