@@ -1,8 +1,8 @@
 #challange-qa
 
-This project contains automated tests for the demoqa.com website using Cypress. The tests cover key user flows in the Elements, Forms, Alerts, and Windows sections of the site.
+This project contains automated tests for the saucedemo.com website using Cypress. The tests cover key user flows such as login, cart and cheackout
 
-## Prerequisites
+# Prerequisites
 
 - Node.js installed (version 14 or higher recommended)
 
@@ -10,7 +10,7 @@ This project contains automated tests for the demoqa.com website using Cypress. 
 
 1. Clone the repository:
    ```
-   git clone https://github.com/jose912893283/challange-saucedemo.git
+   git clone https://github.com/josehi4444/challange-saucedemo.git
    ```
 3. Install the dependencies:
    ```
@@ -22,7 +22,7 @@ To run the tests, you have two options:
 
 1. Run all tests headlessly:
    ```
-   npm run cypress:run:all
+   npm run test:all:dev
    ```
 2. Open Cypress Test Runner and run tests interactively:
    ```
