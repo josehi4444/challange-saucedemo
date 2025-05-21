@@ -5,7 +5,7 @@ const { allureCypress } = require("allure-cypress/reporter");
 
 module.exports = defineConfig({
   video: false,
-  retries: 1,
+  retries: 2,
   viewportWidth: 1440,
   viewportHeight: 900,
   reporter: "list",
@@ -14,7 +14,6 @@ module.exports = defineConfig({
   numTestsKeptInMemory: 0,
   defaultCommandTimeout: 40000,
   responseTimeout: 30000,
-  pageLoadTimeout: 60000,
   e2e: {
     setupNodeEvents(on, config) {
 

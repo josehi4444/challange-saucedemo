@@ -1,6 +1,8 @@
 import CheckoutPage from  '../pages/checkout';
 import CartPage from '../pages/cart';
+const environment = Cypress.env('environment');
 
+describe(`Environment: ${environment}`, () => {
 describe('checkout process', () => {
   const cartPage = new CartPage();
   const checkoutPage = new CheckoutPage();
@@ -33,3 +35,4 @@ describe('checkout process', () => {
     cy.url().should('include', '/inventory.html');
   });
 });
+})

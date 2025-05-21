@@ -1,5 +1,7 @@
 import LoginPage from '../pages/login';
- 
+const environment = Cypress.env('environment');
+
+describe(`Environment: ${environment}`, () => {
 describe('SauceDemo Login Tests', () => {
   const loginPage = new LoginPage();
    const baseUrl = Cypress.env('baseUrl');
@@ -40,5 +42,6 @@ describe('SauceDemo Login Tests', () => {
     loginPage.verifyAcceptedPassword();
   });
 });
+})
 
 

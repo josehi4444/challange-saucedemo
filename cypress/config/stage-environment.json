@@ -1,5 +1,6 @@
 {
   "baseUrl": "https://www.saucedemo.com",
+  "environment": "stage",
   "credentials": {
          "validCredentials": {
              "username": "standard_user",

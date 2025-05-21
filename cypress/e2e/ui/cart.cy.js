@@ -1,6 +1,8 @@
 import CartPage from '../pages/cart';
+const environment = Cypress.env('environment');
 
-describe('SauceDemo Inventory Tests', () => {
+describe(`Environment: ${environment}`, () => {
+describe('SauceDemo Cart Tests', () => {
   const cartPage = new CartPage();
   const products = Cypress.env('products');
   const credentials = Cypress.env('credentials').validCredentials;
@@ -34,3 +36,4 @@ describe('SauceDemo Inventory Tests', () => {
   });
 
 });
+})

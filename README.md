@@ -73,7 +73,7 @@ The generated report will include:
 
 ## Continuous Integration
 
-This project can be easily integrated with a CI/CD pipeline to run tests automatically on each code change. The `cypress:run:all` command can be used in the CI configuration to execute tests headlessly.
+This project can be easily integrated with a CI/CD pipeline to run tests automatically on each code change. The `test:all:dev`or `test:all:stage` command can be used in the CI configuration to execute tests headlessly.
 
 ## Further Improvements
 

@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "cypress:open": "cypress open --config-file cypress.config.js --env configFile=dev-environment",
-    "cypress:run:all": "cypress run --browser chrome --headless --spec 'cypress/e2e/ui/*.cy.js' --config-file cypress.config.js --env configFile=dev-environment",
+    "test:all:stage": "cypress run --browser chrome --headless --spec 'cypress/e2e/ui/*.cy.js' --config-file cypress.config.js --env configFile=stage-environment",
+    "test:all:dev": "cypress run --browser chrome --headless --spec 'cypress/e2e/ui/*.cy.js' --config-file cypress.config.js --env configFile=dev-environment",
     "allure:clean": "rm -rf ./allure-results ./allure-report",
     "allure:generate": "allure generate --clean",
     "allure:open": "allure serve",
