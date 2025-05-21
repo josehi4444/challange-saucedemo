@@ -23,7 +23,7 @@ jobs:
         run: npm install
         
       - name: Run Cypress tests
-        run: npm run cypress:run:all
+        run: npm run test:all:dev
       
       - name: Generate Allure report
         if: always()
